@@ -113,7 +113,7 @@ export default {
             id: null,
             fileArr: [],
             isCreate: false,
-            api: '/ba/product-show-',
+            api: 'http://localhost:3000/product-show?',
             updateApi: '/ba/product-update-',
             createApi: '/ba/product-create',
             deleteApi: '/ba/product-img-delete',

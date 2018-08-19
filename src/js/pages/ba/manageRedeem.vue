@@ -106,13 +106,13 @@ export default {
             targetDeleteFunc: () => {},
             dialog: false,
             loading: true,
-            infoApi: '/ba/redeem-info-list',
-            codeApi: '/ba/redeem-code-list',
-            totalApi: '/ba/redeem-code-state-',
-            deleteApi: '/ba/redeem-code-destroy',
-            exportApi: '/ba/redeem-info-export-',
-            deleteBatchApi: '/ba/redeem-info-destroy-',
-            paginationApi: '/ba/redeem-code-page-info',
+            infoApi: 'http://localhost:3000/redeem-info-list',
+            codeApi: 'http://localhost:3000/redeem-code-list',
+            totalApi: 'http://localhost:3000/redeem-code-state?',
+            deleteApi: 'http://localhost:3000/redeem-code-destroy',
+            exportApi: 'http://localhost:3000/redeem-info-export?',
+            deleteBatchApi: 'http://localhost:3000/redeem-info-destroy?',
+            paginationApi: 'http://localhost:3000/redeem-code-page-info',
             keyword: '',
             infoList: [],
             redeemCodeList: [],
@@ -216,7 +216,7 @@ export default {
         },
         reqRedeemCodeList(data) {
             let me = this;
-            this.$axios.post(me.codeApi, data)
+            this.$axios.get(me.codeApi, data)
             .then(res => {
                 if (res.data) {
                     me.loading = false;

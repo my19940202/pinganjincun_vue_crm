@@ -291,18 +291,18 @@ export default {
 
         return {
             api: {
-                list: '/ba/order-list',
-                total: '/ba/order-page-info',
-                show: '/ba/order-show-',
-                upate: '/ba/order-update-',
-                export: '/ba/order-export',
-                product: '/ba/product-data',
-                express: '/ba/order-update-express-',
+                list: 'http://localhost:3000/order-list',
+                total: 'http://localhost:3000/order-page-info',
+                show: 'http://localhost:3000/order-show-',
+                upate: 'http://localhost:3000/order-update-',
+                export: 'http://localhost:3000/order-export',
+                product: 'http://localhost:3000/product-data',
+                express: 'http://localhost:3000/order-update-express?',
                 // order
                 state: {
-                    close: '/ba/order-update-close',
-                    send: '/ba/order-update-send',
-                    complete: '/ba/order-update-complete'
+                    close: 'http://localhost:3000/order-update-close',
+                    send: 'http://localhost:3000/order-update-send',
+                    complete: 'http://localhost:3000/order-update-complete'
                 }
             },
             editable: true,
@@ -514,7 +514,7 @@ export default {
         },
         reqPagination() {
             let me = this;
-            this.$axios.post(me.api.total, me.genPaginReqData())
+            this.$axios.get(me.api.total, me.genPaginReqData())
             .then(res => {
                 if (res.data) {
                     me.total = res.data;
@@ -569,7 +569,7 @@ export default {
         },
         reqOrders() {
             let me = this;
-            this.$axios.post(me.api.list, me.genOrderReqData())
+            this.$axios.get(me.api.list, me.genOrderReqData())
             .then(res => {
                 if (res.data) {
                     me.orderData = res.data.data;

@@ -1,19 +1,489 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "title": "json-server",
-            "author": "typicode"
-        }
-    ],
-    "comments": [
-        {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+  "product-list": {
+    "data": [
+      {
+        "id": 53,
+        "name": "123",
+        "img1": "https://pajc-uat.nurunci.com/storage/productInfo/9a0d35c97034ad68d02daea67221b232.png",
+        "img2": "https://pajc-uat.nurunci.com/storage/productInfo/be8c68731ff88d4c57e2e7fa04ba3491.png",
+        "introduce": "test",
+        "product_price": "1.00",
+        "product_stock": 1,
+        "is_valid": 1
+      },
+      {
+        "id": 52,
+        "name": "复制-afsdfadsfasdfads啊的空间发货时",
+        "img1": "https://pajc-uat.nurunci.com/storage/productInfo/5bef5793f7f489919f2df7e2c002d3df.jpg",
+        "img2": "https://pajc-uat.nurunci.com/storage/productInfo/590d23ba6fd68667dc1f3fc8f695117e.jpg",
+        "introduce": "世界杯 我才赢了这么点钱",
+        "product_price": "234.00",
+        "product_stock": 1234,
+        "is_valid": 1
+      },
+      {
+        "id": 50,
+        "name": "防晒霜",
+        "img1": "https://pajc-uat.nurunci.com/storage/productInfo/fdcb19ddc1897790412cc5a538cb62fd.JPG",
+        "img2": "https://pajc-uat.nurunci.com/storage/productInfo/19d13f3552c86dc7ba67597ecc32c91c.JPG",
+        "introduce": "防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒防晒",
+        "product_price": "150.00",
+        "product_stock": 20,
+        "is_valid": 1
+      },
+      {
+        "id": 44,
+        "name": "复制-overlord 啥玩意",
+        "img1": "https://pajc-uat.nurunci.com/storage/productInfo/6de986d4c1c5615d528322683920c0de.jpg",
+        "img2": "https://pajc-uat.nurunci.com/storage/productInfo/cb894de610d2464c5051c8e5ed17e508.jpg",
+        "introduce": "太卡剪短发多少",
+        "product_price": "12.00",
+        "product_stock": 12,
+        "is_valid": 1
+      },
+      {
+        "id": 40,
+        "name": "复制-测试产品",
+        "img1": "javascript:;",
+        "img2": "javascript:;",
+        "introduce": "支付宝发红包啦！即日起还有机会额外获得余额宝消费红包！长按复制此消息，打开最新版支付宝就能领取！kVN9p09vzxcvzcxzcx",
+        "product_price": "234.00",
+        "product_stock": 1000,
+        "is_valid": 1
+      },
+      {
+        "id": 39,
+        "name": "复制-复制-测试产品",
+        "img1": "javascript:;",
+        "img2": "javascript:;",
+        "introduce": "说银魂不燃的，他只是像中年大叔对于自己的青春从来的是不屑于说罢了",
+        "product_price": "234.00",
+        "product_stock": 1000,
+        "is_valid": 1
+      },
+      {
+        "id": 38,
+        "name": "保加",
+        "img1": "https://pajc-uat.nurunci.com/storage/productInfo/95e3e2a568c2b4aef563d9fb2d58578f.jpeg",
+        "img2": "https://pajc-uat.nurunci.com/storage/productInfo/7086888177033a92e5e31907d9e14129.jpg",
+        "introduce": "啊手机发生的发觉SD 发手动阀",
+        "product_price": "21.01",
+        "product_stock": 122,
+        "is_valid": 1
+      }
+    ]
+  },
+  "product-pageinfo": {
+    "total": 32,
+    "per_page": 5,
+    "pages": 4
+  },
+  "product-delete": {
+    "id": "52"
+  },
+  "product-copy": {
+    "error_code": 0,
+    "error_msg": "ok"
+  },
+  "product-show": {
+    "data": {
+      "id": 64,
+      "name": "复制-afsdfadsfasdfads啊的空间发货时",
+      "img1": "https://pajc-uat.nurunci.com/storage/productInfo/5bef5793f7f489919f2df7e2c002d3df.jpg",
+      "img2": "https://pajc-uat.nurunci.com/storage/productInfo/54e7018a4c46c60535e93fc2432d0311.jpeg",
+      "introduce": "rwqerewgsdfgsfgfgsdg发给三国杀",
+      "product_price": "234.00",
+      "product_stock": 1234,
+      "is_valid": 1
     }
+  },
+  "redeem-info-list": {
+    "data": [
+      {
+        "id": 28,
+        "product_id": 61,
+        "redeem_batch": "测试",
+        "parameter": "AT",
+        "redeem_amount": 1000,
+        "start_date": "2018-08-17",
+        "end_date": "2018-09-07",
+        "is_valid": 1,
+        "product_name": "防晒"
+      },
+      {
+        "id": 21,
+        "product_id": 1,
+        "redeem_batch": "批次10",
+        "parameter": "AD",
+        "redeem_amount": 10000,
+        "start_date": "2018-07-01",
+        "end_date": "2019-01-01",
+        "is_valid": 1,
+        "product_name": "名字就是要长一点"
+      },
+      {
+        "id": 18,
+        "product_id": 33,
+        "redeem_batch": "10",
+        "parameter": "1",
+        "redeem_amount": 10,
+        "start_date": "2018-08-23",
+        "end_date": "2018-08-23",
+        "is_valid": 1,
+        "product_name": "雷姆"
+      },
+      {
+        "id": 17,
+        "product_id": 37,
+        "redeem_batch": "批次666233",
+        "parameter": "保加利亚妖王",
+        "redeem_amount": 123,
+        "start_date": "2018-07-31",
+        "end_date": "2018-08-27",
+        "is_valid": 1,
+        "product_name": "保加利亚"
+      },
+      {
+        "id": 15,
+        "product_id": 33,
+        "redeem_batch": "批次妈卖批",
+        "parameter": "产品参数测试曲蔚然看",
+        "redeem_amount": 12,
+        "start_date": "2018-07-20",
+        "end_date": "2018-08-21",
+        "is_valid": 1,
+        "product_name": "雷姆"
+      },
+      {
+        "id": 2,
+        "product_id": 1,
+        "redeem_batch": "测试",
+        "parameter": "AA",
+        "redeem_amount": 10000,
+        "start_date": "2018-07-01",
+        "end_date": "2018-07-31",
+        "is_valid": 1,
+        "product_name": "名字就是要长一点"
+      }
+    ]
+  },
+  "redeem-code-list": {
+    "data": [
+      {
+        "id": 10014,
+        "redeem_id": 28,
+        "redeem_code": "ATX6UZQH2G",
+        "istate": "未兑换"
+      },
+      {
+        "id": 10015,
+        "redeem_id": 28,
+        "redeem_code": "AT25NLT28T",
+        "istate": "未兑换"
+      },
+      {
+        "id": 10016,
+        "redeem_id": 28,
+        "redeem_code": "ATVWJ3CY3B",
+        "istate": "未兑换"
+      },
+      {
+        "id": 10017,
+        "redeem_id": 28,
+        "redeem_code": "ATSV3H7ABD",
+        "istate": "未兑换"
+      },
+      {
+        "id": 10018,
+        "redeem_id": 28,
+        "redeem_code": "ATQTUPNDEF",
+        "istate": "未兑换"
+      },
+      {
+        "id": 10019,
+        "redeem_id": 28,
+        "redeem_code": "ATRHPYLNDR",
+        "istate": "未兑换"
+      },
+      {
+        "id": 10020,
+        "redeem_id": 28,
+        "redeem_code": "ATR697YU3N",
+        "istate": "未兑换"
+      },
+      {
+        "id": 10021,
+        "redeem_id": 28,
+        "redeem_code": "ATFUPD9VNH",
+        "istate": "未兑换"
+      },
+      {
+        "id": 10022,
+        "redeem_id": 28,
+        "redeem_code": "AT2TZCVF8E",
+        "istate": "未兑换"
+      },
+      {
+        "id": 10023,
+        "redeem_id": 28,
+        "redeem_code": "ATCVX79EY5",
+        "istate": "未兑换"
+      }
+    ]
+  },
+  "redeem-code-state": {
+    "total": 1000,
+    "valid": 1000,
+    "invalid": 0,
+    "delete": 0
+  },
+  "redeem-code-page-info": {
+    "redeem_id": 17,
+    "code": ""
+  },
+  "order-list": {
+    "data": [
+      {
+        "id": 4,
+        "order_no": "2018072000003",
+        "openid": "o5yDht6o4vjmiiiVbugk-h7o1I58",
+        "name": "魏红",
+        "mobile": "13555467786",
+        "phone": "",
+        "company": "",
+        "address": "上海市静安区延平路100号",
+        "city": "上海",
+        "province": "上海市",
+        "district": "静安区",
+        "redeemCode": "AAC2BNYQU5",
+        "express_company": "",
+        "express_code": "",
+        "type": "微信订单",
+        "state": "已提交/未发货",
+        "is_valid": 1,
+        "user_id": "",
+        "bk_user_id": "",
+        "bk_user_type": "",
+        "action_at": "",
+        "order_date": "2018-07-20",
+        "product_name": "名字就是要长一点"
+      },
+      {
+        "id": 3,
+        "order_no": "2018072000002",
+        "openid": "o5yDht6o4vjmiiiVbugk-h7o1I58",
+        "name": "李四",
+        "mobile": "13555467786",
+        "phone": "",
+        "company": "",
+        "address": "上海市静安区延平路100号",
+        "city": "上海",
+        "province": "上海市",
+        "district": "静安区",
+        "redeemCode": "AARVSLDNLV",
+        "express_company": "",
+        "express_code": "",
+        "type": "微信订单",
+        "state": "已提交/未发货",
+        "is_valid": 1,
+        "user_id": "",
+        "bk_user_id": "",
+        "bk_user_type": "",
+        "action_at": "",
+        "order_date": "2018-07-20",
+        "product_name": "名字就是要长一点"
+      },
+      {
+        "id": 2,
+        "order_no": "2018071700001",
+        "openid": "o5yDht6o4vjmiiiVbugk-h7o1I58",
+        "name": "张三",
+        "mobile": "13555467786",
+        "phone": "",
+        "company": "",
+        "address": "上海市静安区延平路100号",
+        "city": "上海",
+        "province": "上海市",
+        "district": "静安区",
+        "redeemCode": "AA95DKT9JT",
+        "express_company": "顺丰",
+        "express_code": "31313131313",
+        "type": "微信订单",
+        "state": "已发货",
+        "is_valid": 1,
+        "user_id": "",
+        "bk_user_id": "",
+        "bk_user_type": "",
+        "action_at": "",
+        "order_date": "2018-07-17",
+        "product_name": "名字就是要长一点"
+      },
+      {
+        "id": 1,
+        "order_no": "2018071600006",
+        "openid": "o5yDht6o4vjmiiiVbugk-h7o1I58",
+        "name": "王五",
+        "mobile": "13566662222",
+        "phone": "",
+        "company": "",
+        "address": "上海市",
+        "city": "上海",
+        "province": "上海市",
+        "district": "黄浦区",
+        "redeemCode": "AAQI3QENK7",
+        "express_company": "EMS",
+        "express_code": "33131313131",
+        "type": "微信订单",
+        "state": "已提交/未发货",
+        "is_valid": 1,
+        "user_id": "",
+        "bk_user_id": "",
+        "bk_user_type": "",
+        "action_at": "",
+        "order_date": "2018-07-16",
+        "product_name": "名字就是要长一点"
+      }
+    ]
+  },
+  "order-page-info": {
+    "total": 4,
+    "per_page": 10,
+    "pages": 1
+  },
+  "product-data": {
+    "data": [
+      {
+        "id": 65,
+        "name": "复制-复制-afsdfadsfasdfads啊的空间发货时"
+      },
+      {
+        "id": 64,
+        "name": "复制-afsdfadsfasdfads啊的空间发货时"
+      },
+      {
+        "id": 62,
+        "name": "Kose"
+      },
+      {
+        "id": 61,
+        "name": "防晒"
+      },
+      {
+        "id": 60,
+        "name": "防晒"
+      },
+      {
+        "id": 59,
+        "name": "复制-afsdfadsfasdfads啊的空间发货时"
+      },
+      {
+        "id": 58,
+        "name": "啊空间上大富科技"
+      },
+      {
+        "id": 57,
+        "name": "产品名称"
+      },
+      {
+        "id": 56,
+        "name": "产品介绍拉拉"
+      },
+      {
+        "id": 55,
+        "name": "产品介绍"
+      },
+      {
+        "id": 54,
+        "name": "测试提交"
+      },
+      {
+        "id": 53,
+        "name": "123"
+      },
+      {
+        "id": 52,
+        "name": "复制-afsdfadsfasdfads啊的空间发货时"
+      },
+      {
+        "id": 50,
+        "name": "防晒霜"
+      },
+      {
+        "id": 44,
+        "name": "复制-overlord 啥玩意"
+      },
+      {
+        "id": 43,
+        "name": "复制-呀屎勒梁非凡"
+      },
+      {
+        "id": 42,
+        "name": "复制-测试产品"
+      },
+      {
+        "id": 41,
+        "name": "复制-复制-测试产品"
+      },
+      {
+        "id": 40,
+        "name": "复制-测试产品"
+      },
+      {
+        "id": 39,
+        "name": "复制-复制-测试产品"
+      },
+      {
+        "id": 38,
+        "name": "保加"
+      },
+      {
+        "id": 37,
+        "name": "保加利亚"
+      },
+      {
+        "id": 36,
+        "name": "overlord 啥玩意"
+      },
+      {
+        "id": 35,
+        "name": "need a girl friend"
+      },
+      {
+        "id": 34,
+        "name": "雷姆"
+      },
+      {
+        "id": 33,
+        "name": "雷姆"
+      },
+      {
+        "id": 32,
+        "name": "呀屎勒梁非凡"
+      },
+      {
+        "id": 31,
+        "name": "fuckyou"
+      },
+      {
+        "id": 17,
+        "name": "afsdfadsfasdfads啊的空间发货时逛逛"
+      },
+      {
+        "id": 16,
+        "name": "afsdfadsfasdfads啊的空间发货时"
+      },
+      {
+        "id": 14,
+        "name": "复制-测试产品"
+      },
+      {
+        "id": 11,
+        "name": "测试产品"
+      },
+      {
+        "id": 1,
+        "name": "名字就是要长一点"
+      }
+    ]
+  }
 }

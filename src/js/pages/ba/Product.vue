@@ -95,9 +95,13 @@ export default {
         return {
             loading: true,
             defaultImg: 'https://api.vtrois.com/image/80x80',
-            deleteApi: '/ba/product-destroy',
-            copyApi: '/ba/product-copy-',
-            pageInfoApi: '/ba/product-page-info',
+            mockapi: 'http://localhost:3000/',
+            api: {
+                list: 'product-list',
+                delete: 'product-delete',
+                copy: 'product-copy',
+                pageInfo: 'product-pageinfo'
+            },
             table: {
                 data: []
             },
@@ -112,21 +116,21 @@ export default {
     },
     methods: {
         getImgUrl(item) {
-            return item.img1 || item.img2 || this.defaultImg;
+            return item.img1 || this.defaultImg;
         },
         handleSelectionChange(val) {
             this.multipleSelection = val;
         },
         gettableData(pageIdx) {
             let me = this;
-            me.$axios.get(`/ba/product-list-${me.pageIdx}`)
+            me.$axios.get(`${me.mockapi}${me.api.list}?id=${me.pageIdx}`)
             .then(res => {
                 me.table.data = res.data.data;
                 me.loading = false;
             });
 
             // 分页相关
-            me.$axios.get(me.pageInfoApi)
+            me.$axios.get(`${me.mockapi}${me.api.pageInfo}`)
             .then(res => {
                 me.pagination = res.data;
             });
@@ -151,7 +155,7 @@ export default {
                 type: 'error'
             };
 
-            me.$axios.post(me.deleteApi, reqData)
+            me.$axios.post(`${me.mockapi}${me.api.delete}`, reqData)
             .then(res => {
                 if (res.data.error_msg === 'ok') {
                     msg = {
@@ -189,7 +193,7 @@ export default {
                 me.$message.error(words);
                 return;
             }
-            let url = `${me.copyApi}${me.multipleSelection[0].id}`;
+            let url = `${me.mockapi}${me.api.copy}?${me.multipleSelection[0].id}`;
             
             me.$axios.get(url)
             .then(res => {
