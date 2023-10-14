@@ -10,7 +10,7 @@ export default {
         let auth = getCookie('pajc_auth');
         let pageUrl = encodeURIComponent(window.location.href);
         let safeUrl = `https://pajc.nurunci.com/wechat/base/safe?return_url=${pageUrl}`;
-        if (parseInt(auth, 10) !== 1) {
+        if (parseInt(auth, 10) !== 1 && process.env.NODE_ENV !== 'development') {
             window.location.href = safeUrl;
         }
     },
